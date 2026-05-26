@@ -1,11 +1,27 @@
 {
   "app": {
+    /*包名*/
+    /*应用唯一标识*/
+    /*类似 Android 的 applicationId*/
     "bundleName": "com.zyr.todo",
-    "vendor": "example",
-    "versionCode": 1000000,
+    /*开发者 / 厂商名称*/
+    /*标识开发商*/
+    /*应用市场展示*/
+    "vendor": "ZYR",
+    /*整数*/
+    /*内部版本号*/
+    /*每次发版必须递增*/
+    "versionCode": 1,
+    /*显示给用户看的版本号*/
+    /*设置 -> 应用信息*/
     "versionName": "1.0.0",
+    /*构建版本号*/
+    /*CI / CD 自动构建*/
+    /*区分同一版本的不同打包*/
     "buildVersion": "1",
+    /*应用图标资源引用*/
     "icon": "$media:layered_image",
+    /*应用名称*/
     "label": "$string:app_name"
   }
 }
