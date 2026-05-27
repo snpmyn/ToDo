@@ -36,7 +36,7 @@ struct Index {
           middle: { anchor: '__container__', align: HorizontalAlign.Center }
         })
         .onClick(() => {
-          this.message = 'Welcome';
+          this.message = '欢迎回来';
         })
     }
     // 宽高
