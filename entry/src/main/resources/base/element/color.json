@@ -2,7 +2,63 @@
   "color": [
     {
       "name": "start_window_background",
-      "value": "#FFFFFF"
+      "value": "#F5F7FB"
+    },
+    {
+      "name": "color_primary",
+      "value": "#4C8DFF"
+    },
+    {
+      "name": "color_primary_pressed",
+      "value": "#3378F6"
+    },
+    {
+      "name": "color_divider",
+      "value": "#E8EDF5"
+    },
+    {
+      "name": "text_primary",
+      "value": "#111827"
+    },
+    {
+      "name": "text_secondary",
+      "value": "#667085"
+    },
+    {
+      "name": "text_tertiary",
+      "value": "#98A2B3"
+    },
+    {
+      "name": "color_success",
+      "value": "#32C97A"
+    },
+    {
+      "name": "color_warning",
+      "value": "#FFB547"
+    },
+    {
+      "name": "color_error",
+      "value": "#FF5A6B"
+    },
+    {
+      "name": "tab_bar_divider",
+      "value": "#EAEFF6"
+    },
+    {
+      "name": "tab_icon_normal",
+      "value": "#98A2B3"
+    },
+    {
+      "name": "tab_icon_selected",
+      "value": "#4C8DFF"
+    },
+    {
+      "name": "tab_bar_background",
+      "value": "#FDFDFE"
+    },
+    {
+      "name": "tab_bar_background_glass",
+      "value": "#CCFFFFFF"
     }
   ]
 }
