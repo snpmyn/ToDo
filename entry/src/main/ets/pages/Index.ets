@@ -11,50 +11,16 @@ import { MinePage } from './MinePage'
 @Component
   // 定义组件名字
 struct Index {
-  // // 状态变量
-  // // 变量变化 + UI 自动刷新
-  // @State message: string = '你好';
-  //
-  // // UI 构建函数
-  // build() {
-  //   // 相对布局容器
-  //   // 类似 Android 中 RelativeLayout
-  //   RelativeContainer() {
-  //     // 文本组件
-  //     // 引用的是状态变量
-  //     // 以后变量变 + 界面会自动变
-  //     Text(this.message)
-  //     // 给组件设置唯一 id
-  //     // 类似 Android 中 android:id="@+id/hello"
-  //     // 测试定位
-  //     // 查找组件
-  //       .id('HelloWorld')
-  //       .fontSize($r('app.float.page_text_font_size'))
-  //       .fontWeight(FontWeight.Bold)
-  //       // 对齐规则
-  //       .alignRules({
-  //         // 垂直居中
-  //         center: { anchor: '__container__', align: VerticalAlign.Center },
-  //         // 水平居中
-  //         middle: { anchor: '__container__', align: HorizontalAlign.Center }
-  //       })
-  //       .onClick(() => {
-  //         this.message = '欢迎回来';
-  //       })
-  //   }
-  //   // 宽高
-  //   // 页面占满整个屏幕
-  //   .height('100%')
-  //   .width('100%')
-  // }
   private tabsController: TabsController = new TabsController()
+  // 状态变量
+  // 变量变化 + UI 自动刷新
   @State currentPosition: number = 0
 
   @Builder
   tabBuilder(index: number, title: string) {
     Column() {
       Text(title)
-        .fontSize(18)
+        .fontSize($r('app.float.font_18'))
         .fontColor(this.currentPosition === index
           ? $r('app.color.color_primary')
           : $r('app.color.text_secondary'))
@@ -63,10 +29,10 @@ struct Index {
           : FontWeight.Normal)
 
       Divider()
-        .width(20)
-        .height(3)
-        .borderRadius(2)
-        .margin({ top: 6 })
+        .width($r('app.float.space_20'))
+        .height($r('app.float.space_3'))
+        .borderRadius($r('app.float.space_2'))
+        .margin({ top: $r('app.float.space_6') })
         .color(this.currentPosition === index
           ? $r('app.color.color_primary')
           : Color.Transparent)
@@ -74,6 +40,7 @@ struct Index {
     .justifyContent(FlexAlign.Center)
   }
 
+  // UI 构建函数
   build() {
     Column() {
       Tabs({
@@ -107,6 +74,8 @@ struct Index {
         console.info('当前页面 = ' + index)
       })
     }
+    // 宽高
+    // 页面占满整个屏幕
     .width('100%')
     .height('100%')
   }
