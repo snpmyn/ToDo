@@ -42,7 +42,8 @@ struct Index {
 
   // UI 构建函数
   build() {
-    Column() {
+    // 导航组件
+    Navigation() {
       Tabs({
         barPosition: BarPosition.End,
         controller: this.tabsController,
@@ -74,9 +75,13 @@ struct Index {
         console.info('当前页面 = ' + index)
       })
     }
-    // 宽高
-    // 页面占满整个屏幕
+    // 宽占满整个屏幕
     .width('100%')
+    // 高占满整个屏幕
     .height('100%')
+    // 隐藏工具栏
+    .hideToolBar(true)
+    // 顶内边距
+    .padding({ top: $r('app.float.space_14') })
   }
 }
