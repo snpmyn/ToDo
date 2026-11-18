@@ -7,7 +7,7 @@ import { MinePage } from './MinePage'
 @Entry
   // 这是一个 ArkUI 组件
   // 类似 React 或者 Android Compose
-  // 这个结构体可以绘制 UI
+  // 该结构体可以绘制 UI
 @Component
   // 定义组件名字
 struct Index {
